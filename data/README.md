@@ -2,14 +2,14 @@
 
 ## Primary Dataset
 
-**File:** `AIID_Excel_Export-20261005.xlsx`  
+**File:** [`AIID_Excel_Export-20261005.xlsx`](./AIID_Excel_Export-20261005.xlsx)  
 **Source:** AI Incident Database (AIID)  
 **Provider:** Responsible AI Collaborative  
 **Snapshot date:** October 5, 2026  
-**Download:** https://incidentdatabase.ai/research/snapshots  
+**Official source:** https://incidentdatabase.ai/research/snapshots  
 **License:** Creative Commons Attribution 4.0 International (CC BY 4.0)
 
-Download the Excel export from the official AIID snapshots page and place it in this folder as `AIID_Excel_Export-20261005.xlsx` (or update `DATA_FILE` in `notebooks/00_data_exploration.ipynb`).
+The Excel snapshot used in this capstone is included in this folder so the repository is fully reproducible from a single clone.
 
 ### Required Attribution
 
@@ -52,3 +52,12 @@ Download the Excel export from the official AIID snapshots page and place it in 
 ## Missing Data
 
 CSETv1 fields (Sector of Deployment, Autonomy Level) are ~12% filled because that taxonomy was applied selectively. See `notebooks/00_data_exploration.ipynb` for the missingness analysis used in this study.
+
+---
+
+## Refreshing the Dataset
+
+1. Visit https://incidentdatabase.ai/research/snapshots
+2. Download the latest Excel export
+3. Replace `AIID_Excel_Export-20261005.xlsx` in this directory (or update the filename)
+4. Update `DATA_FILE` in `notebooks/00_data_exploration.ipynb`
