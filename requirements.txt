@@ -1,0 +1,26 @@
+# Python dependencies for QM 640 Capstone
+# Tested on Python 3.11
+# Install with: pip install -r requirements.txt
+
+# Data handling
+pandas==2.2.2
+numpy==1.26.4
+openpyxl==3.1.2          # required for reading .xlsx files
+
+# Statistical analysis
+scipy==1.13.1
+statsmodels==0.14.2       # logistic regression, OLS, ITS / segmented regression
+
+# Machine learning
+scikit-learn==1.5.1       # Random Forest, K-Means, train-test split, metrics
+
+# Missing data imputation
+fancyimpute==0.7.0         # MICE (Multiple Imputation by Chained Equations)
+
+# Visualisation
+matplotlib==3.9.1
+seaborn==0.13.2
+
+# Notebook environment
+jupyter==1.0.0
+ipykernel==6.29.5
