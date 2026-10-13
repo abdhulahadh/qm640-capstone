@@ -9,6 +9,20 @@
 **Official download URL:** https://incidentdatabase.ai/research/snapshots  
 **License:** Creative Commons Attribution 4.0 International (CC BY 4.0)
 
+### Official source and license
+
+Download current snapshots from the [AIID research snapshots page](https://incidentdatabase.ai/research/snapshots). This project uses the October 5, 2026 Excel export (`AIID_Excel_Export-20261005.xlsx`). The dataset is licensed under **CC BY 4.0**; use the attribution below when you share or publish work based on this data.
+
+### Rebuild the Excel file from base64 parts
+
+Because the workbook is large, it may be stored in this folder as text shards named `AIID_Excel_Export-20261005.part_*.b64`. After cloning the repo, concatenate and decode them with:
+
+```bash
+python data/assemble_dataset.py
+```
+
+That writes `data/AIID_Excel_Export-20261005.xlsx` next to the parts. If the `.xlsx` is already present, you do not need to run the script.
+
 The Excel snapshot used in this capstone is intended to live in this folder so the repository is fully reproducible from a single clone. If the binary is not yet present on your checkout, download the matching export from the official AIID snapshots page above and place it here with the same filename.
 
 ### Required Attribution
